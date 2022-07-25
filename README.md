@@ -17,3 +17,8 @@ This repository presents the code, which has been used for the Master's Thesis "
 
 ```git clone https://github.com/awslabs/sockeye.git``` \
 ```cd sockeye && pip3 install --editable .```
+
+## compute scores
+
+``` pip install sacrebleu``` \
+```sacrebleu dev.ref -i dev.post --force -q -w 2 -m bleu chrf```
